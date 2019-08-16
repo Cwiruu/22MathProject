@@ -1,12 +1,12 @@
 #container {
     width: 1050px;
     /*1050px*/
-    border: 1px solid grey;
     margin: 0 auto;
 }
 
 #header {
     height: 100px;
+    padding: 10px 0;
 }
 
 #brand {
@@ -25,12 +25,141 @@ h1 a {
     background: linear-gradient(blue, teal);
     width: 400px;
     height: 50px;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
 }
 
 .text {
     float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    background: white url(https://img.icons8.com/material/24/000000/search--v1.png) right center no-repeat;
 }
 
 .submit {
     float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: green;
+    font-size: 15px;
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu {
+    height: 70px;
+    background: linear-gradient(blue, teal);
+    padding: 7px 0;
+}
+
+#menu ul li {
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right: 1px solid white;
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    line-height: 30px;
+    -webkit-transition: font-size 500ms ease;
+    -moz-transition: font-size 500ms ease;
+    -o-transition: font-size 500ms ease;
+    -ms-transition: font-size 500ms ease;
+    transition: font-size 500ms ease;
+}
+
+#menu ul li a:hover,
+#menu ul li a:hover a.active {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#introduction {
+    background: linear-gradient(rgb(245, 238, 238), rgb(248, 246, 246));
+    padding: 30px;
+    margin: 15px 0;
+}
+
+#introduction h3 {
+    font-size: 35px;
+    color: rgb(39, 29, 29);
+    font-weight: normal;
+}
+
+#introduction p {
+    font-size: 20px;
+    color: rgb(3, 122, 3);
+    text-align: justify;
+}
+
+.sidebar {
+    height: 500px;
+    width: 450px;
+    border: blue 1px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#leftsidebar {
+    float: left;
+}
+
+#rightsidebar {
+    float: right;
+}
+
+.sidebar h3 {
+    color: red;
+    font-size: 25px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a:active {
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+    -webkit-transition: font-size 500ms ease;
+    -moz-transition: font-size 500ms ease;
+    -o-transition: font-size 500ms ease;
+    -ms-transition: font-size 500ms ease;
+    transition: font-size 500ms ease;
+}
+
+#leftsidebar ul li {
+    padding: 10px 0 10px 30px;
+    list-style-image: url(https://img.icons8.com/material/20/000000/arrow.png);
+}
+
+#leftsidebar ul,
+#rightsidebar ul {
+    padding-top: 8px;
+}
+
+#rightsidebar ul li {
+    background: no-repeat left center url(https://img.icons8.com/color/24/000000/checked-2.png);
+    padding: 10px 0 10px 30px;
 }
